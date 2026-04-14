@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    
+        z-index:999;
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 150px;
+        transition: 0.5s ease;
+        background-image: url('images/header.jpg');
+        background-size: cover;
+    }
+
+
+    header .brand{
+        color:white;
+        font-size: 2em;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bolder;
+        letter-spacing: 0.3em;
+    
+    
+    }
+header.navigation{
+    position:relative;
+
+}
+header .navigation .navigation-items a{
+    position:relative;
+    color:white;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition:0.3s ease;
+
+}
+header .navigation .navigation-items a:before{
+    content:'';
+    position: absolute;
+    background:white;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a:hover:before{
+    width:100%;
+
+}
+header .navigation .navigation-items .homepage{
+    font-weight: bolder;
+    border: 1px solid white;
+    padding: 7px 20px;
+    background-color: orangered;
+    border-radius: 80px;
+
+}
+section{
+    padding:100px 200px;
+
+}
+.home{
+    position: relative;
+    width: 100%;
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.home::before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    background: rgba(241, 158, 128, 0.411);
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+
+.home .content{
+    z-index:888;
+    color:white;
+    width:70%;
+    margin-top: 50px;
+
+}
+.home .content h1{
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+
+}
+
+.home .content p{
+    margin-bottom: 50px;
+    letter-spacing: 0.05em;
+}
+.home .content a{
+    background: white;
+    padding:10px 20px;
+    color:orangered;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bolder;
+   
+
+}
+.home .content a:hover{
+    color: white;
+    background-color: orangered;
+}
+.home video{
+    z-index:000;
+    position: absolute;
+    top:0;
+    left: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+img{
+    width: 100px;
+    height:100px;
+}
+
+#container{
+   
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+#container .heading{
+    text-align: center;
+    padding-bottom: 20px;
+    color: orangered;
+    text-shadow: 0 5px 10px rgba(0,0,0,2);
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+#container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px, 1fr));
+    gap: 15px;
+
+}
+
+#container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    padding: 30px 20px;
+
+}
+#container .box-container .box img{
+    width: 100px;
+    height:100px;
+
+}
+#container .box-container .box h3{
+    color: black;
+    font-size: 22px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+#container .box-container .box p{
+    color: black;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+#container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background: orangered;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+    text-decoration: none;
+}
+#container .box-container .box .btn:hover{
+    background: black;
+}
+
+#container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.6);
+    transform: scale(1.03);
+}
+.contact{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+   
+}
+.contact a{
+    color: orangered;
+    
+}
+.contact a i{
+    font-size: 30px;
+}
+   
+
